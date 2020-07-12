@@ -1,0 +1,189 @@
+:root {
+  --navbar:#18181B;
+  --search:#3A3A3D;
+  --purple:#9147FF
+}
+html {
+    font-size: 10px;
+}
+body {
+  box-sizing: border-box;
+}
+html,body,ul,li,h1,h2,h3,h4,h5,h6,p {
+  margin: 0;
+  padding: 0;
+}
+.avatar {
+  height: 3rem;
+  width: 3rem;
+  background-color: white;
+  border-radius: 50%;
+  margin-right: 1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.person-icon {
+  font-size: 1.5rem;
+  color: black;
+}
+/* ---------------------- Twitch nav ---------------------- */
+.twitch-nav {
+  display: flex;
+  align-items: stretch;
+  background-color: var(--navbar);
+}
+.twitch-nav ion-icon {
+  cursor:pointer;
+}
+/* ---------------------- Nav Left ---------------------- */
+.nav-left {
+  display: flex;
+  align-items: stretch;
+  justify-content: flex-start;
+  flex:1;
+  min-height: 5rem;
+}
+.twitch-logo-wrapper {
+  display: inline-flex;
+  align-items: center;
+}
+.nav-twitch-logo {
+  font-size: 3rem;
+  margin: 0.2rem;
+  color: var(--purple);
+}
+.nav-left-links {
+  display: flex;
+  flex:8;
+  justify-content: space-around;
+}
+.nav-left-link-wrapper {
+  display: flex;
+  align-items: stretch;
+}
+.nav-left-link-wrapper a {
+  display: flex;
+  align-items: center;
+  font-size: 1.8rem;
+  text-decoration: none;
+  color: white;
+}
+.nav-left-link-wrapper a:hover {
+  color:var(--purple);
+}
+.nav-left-last-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+.nav-left-last-item ion-icon {
+  font-size: 2.5rem;
+  color: white;
+  margin: 0.3rem;
+}
+.nav-left-last-item .dropdown-toggler {
+  cursor: pointer;
+  border-radius: 5px;
+}
+.nav-left-last-item .dropdown-toggler:hover {
+  background-color: var(--search);
+}
+
+/* ---------------------- Nav Center ---------------------- */
+.nav-center {
+  display: flex;
+  flex:1;
+  justify-content: center;
+  align-items: center;
+}
+.full-search-bar {
+  display: flex;
+  align-items: stretch;
+  flex: 1;
+  max-width: 75%;
+}
+.full-search-bar input {
+  flex: 1;
+  padding: 1rem 0.5rem;
+  margin-right: 1px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border: none;
+  background-color: var(--search);
+  color: rgba(255,255,255,0.7);
+  font-size: 1.6rem;
+}
+.search-icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-basis: 4rem;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background-color: rgba(125,125,125,0.2);
+}
+.full-search-bar ion-icon {
+  font-size: 2.5rem;
+  color: rgba(255,255,255,0.3);
+}
+
+/* ---------------------- Nav Right ---------------------- */
+.nav-right {
+  flex:1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.nav-right-items-wrapper {
+  display: flex;
+  align-items: stretch;
+}
+.nav-right .dropdown-toggler {
+  display: flex;
+  margin-right: 0.9rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.nav-right .dropdown-toggler:hover {
+  background-color: var(--search);
+}
+.nav-right ion-icon {
+  font-size: 2rem;
+  color:white;
+  margin: 0.2rem;
+  padding: 0.3rem;
+}
+.nav-right .crown-svg {
+  width: auto;
+  height: 2rem;
+  padding: 0.3rem;
+  margin: 0.2rem;
+  fill: white;
+}
+.get-bits-wrapper {
+  color: white;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-right: 0.7rem;
+  padding: 0 0.5rem;
+  border-radius: 5px;
+}
+.get-bits-wrapper:hover {
+  background-color: var(--search);
+}
+.gem-icon {
+  font-size: 1.3rem;
+}
+.get-bits-wrapper span {
+  font-size: 1.4rem;
+  margin-left: 2px;
+}
+.nav-right .person-icon {
+  color: black;
+  font-size: 1.5rem;
+}
+/* ------------------------------------------------------ */
