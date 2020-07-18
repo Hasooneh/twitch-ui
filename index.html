@@ -1,61 +1,530 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <link rel="stylesheet" href="styles.css">
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
-    <header>
-      <nav class="twitch-nav">
-        <div class="nav-left">
-          <a class="twitch-logo-wrapper" href=""><ion-icon class="nav-twitch-logo" name="logo-twitch"></ion-icon></a>
 
-          <div class="nav-left-links">
-            <div class="nav-left-link-wrapper"><a href=""><p>Following</p></a></div>
-            <div class="nav-left-link-wrapper"><a href=""><p>Browse</p></a></div>
-            <div class="nav-left-link-wrapper"><a href=""><p>Esports</p></a></div>
-            <div class="nav-left-link-wrapper"><a href=""><p>Music</p></a></div>
+<head>
+  <link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8">
+  <title></title>
+</head>
+
+<body>
+  <header>
+    <nav class="twitch-nav">
+      <div class="nav-left">
+        <a class="twitch-logo-wrapper" href="">
+          <ion-icon class="nav-twitch-logo" name="logo-twitch"></ion-icon>
+        </a>
+
+        <div class="nav-left-links">
+          <div class="nav-left-link-wrapper"><a href="">
+              <p>Following</p>
+            </a></div>
+          <div class="nav-left-link-wrapper"><a href="">
+              <p>Browse</p>
+            </a></div>
+          <div class="nav-left-link-wrapper"><a href="">
+              <p>Esports</p>
+            </a></div>
+          <div class="nav-left-link-wrapper"><a href="">
+              <p>Music</p>
+            </a></div>
+        </div>
+
+        <div class="nav-left-last-item relative">
+          <div class="dropdown-toggler">
+            <ion-icon name="ellipsis-horizontal-outline"></ion-icon>
           </div>
-
-          <div class="nav-left-last-item">
-            <div class="dropdown-toggler">
-              <ion-icon name="ellipsis-horizontal-outline"></ion-icon>
-            </div>
+          <div class="dropdown dropdown-left">
+            <h3>GENERAL</h3>
+            <ul>
+              <li><a href="">About</a></li>
+              <li><a href="">Advertisers</a></li>
+              <li><a href="">Blog</a></li>
+              <li><a href="">Developers</a></li>
+              <li><a href="">Download Apps</a></li>
+              <li><a href="">Gift Card</a></li>
+              <li><a href="">IGDB</a></li>
+              <li><a href="">Jobs</a></li>
+              <li><a href="">Music on Twitch</a></li>
+              <li><a href="">Partners</a></li>
+              <li><a href="">Press</a></li>
+              <li><a href="">Store</a></li>
+              <li><a href="">Turbo</a></li>
+            </ul>
+            <h3>HELP & LEGAL</h3>
+            <ul>
+              <li><a href="">Accessibility Statement</a></li>
+              <li><a href="">Ad Choices</a></li>
+              <li><a href="">Community Guidelines</a></li>
+              <li><a>Cookie Policy</a></li>
+              <li><a>Help</a></li>
+              <li><a href="">Privacy Policy</a></li>
+              <li><a href="">Security</a></li>
+              <li><a href="">Terms</a></li>
+            </ul>
           </div>
         </div>
-        <!-- --------------------------------- -->
-        <div class="nav-center">
-          <div class="full-search-bar">
-            <input type="text" placeholder="Search">
-            <div class="search-icon-wrapper">
+      </div>
+      <!-- --------------------------------- -->
+      <div class="nav-center">
+        <div class="full-search-bar">
+          <input type="text" placeholder="Search">
+          <div class="search-icon-wrapper">
+            <ion-icon name="search-outline"></ion-icon>
+          </div>
+        </div>
+      </div>
+      <!-- --------------------------------- -->
+      <div class="nav-right">
+        <div class="nav-right-items-wrapper">
+        <div class="relative">
+          <div class="dropdown-toggler dropdown-toggler-highlight">
+            <svg class="crown-svg" width="100%" height="100%" version="1.1" viewBox="0 0 20 20" x="0px" y="0px" class="ScIconSVG-sc-1bgeryd-1 cMQeyU">
+              <g>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M13.798 10.456L10 6.657l-3.798 3.799L4 8.805V13h12V8.805l-2.202 1.65zM18 5v8a2 2 0 0 1-2 2H4a2.002 2.002 0 0 1-2-2V5l4 3 4-4 4 4 4-3z"></path>
+              </g>
+            </svg>
+          </div>
+
+          <div class="dropdown dropdown-loot">
+            <div class="header">
+              <div class="invisible"></div>
+              <h3>Twitch Prime Loot</h3>
+              <div class="icon-wrapper">
+              <ion-icon class="close-icon" name="close-outline"></ion-icon>
+              </div>
+            </div>
+
+
+          <div class="body">
+            <div class="twitch-prime-section">
+              <h2>Claim With Twitch Prime</h2>
+              <svg class="tw-svg__asset tw-svg__asset--brand tw-svg__asset--logotwitchprime" width="330px" height="150px" version="1.1" viewBox="0 0 275 135" x="0px" y="0px"><g><path d="M20 17.5h17.5v20H20v5h17.5v20H10l-10-10V0h20v17.5zm72.5 0h20v45h-60l-10-10v-35h20v25h5v-25h20v25h5v-25zm25 0h20v45h-20v-45zm0-17.5h20v12.5h-20V0zM195 17.5h30v20h-20v5h20v20h-30l-10-10v-25l10-10zm70 0l10 10v35h-20v-25h-5v25h-20V0h20v17.5h15zm-102.5 0H180v20h-17.5v5H180v20h-27.5l-10-10V0h20v17.5z"></path><path d="M50.5 134.5a1.613 1.613 0 0 1-1.25-.405c-.315-.375-.25-1.345-.25-1.345v-46c0-.475-.055-.875.25-1.25a2.25 2.25 0 0 1 1.25-.5h5.25a1.8 1.8 0 0 1 1.828 1.612L58 88.5a15.41 15.41 0 0 1 4.985-3.293A16.19 16.19 0 0 1 69 84a12.827 12.827 0 0 1 10.5 4.942 20.667 20.667 0 0 1 3.912 13.25 24.07 24.07 0 0 1-1.934 10.013 15.75 15.75 0 0 1-5.25 6.593 13.9 13.9 0 0 1-7.633 2.374 16.177 16.177 0 0 1-5.373-1.025A12.25 12.25 0 0 1 59 117.75v15a2.128 2.128 0 0 1-.5 1.39c-.366.254-.805.38-1.25.36H50.5zm15.23-21a6.485 6.485 0 0 0 5.692-2.632 14.72 14.72 0 0 0 1.823-8.25 15.1 15.1 0 0 0-1.8-8.346 6.453 6.453 0 0 0-5.737-2.632c-2.364 0-4.682.643-6.708 1.86v18.25c2.025 1.25 4.322 1.77 6.707 1.75h.023zm26.33 6.972c-.79 0-1.66-.404-1.81-1.21a5.59 5.59 0 0 1 0-.75V86.75c-.034-.45.103-.897.385-1.25.4-.291.872-.465 1.365-.5h5a1.885 1.885 0 0 1 1.912 1.612l.838 3.638a19.445 19.445 0 0 1 5.218-4.25 11.337 11.337 0 0 1 5.22-1.362h.967c.493.017.97.178 1.373.462.314.375.472.563.472 1.155v6a1.92 1.92 0 0 1-.45 1.305c-.375.315-.98.375-1.375.375h-3.24a19.635 19.635 0 0 0-3.778.485c-1.337.22-2.646.583-3.907 1.08v23c0 .593-.063 1.05-.345 1.422a2.68 2.68 0 0 1-1.448.538l-6.397.013zm30.837-40.844a6.015 6.015 0 0 1-4.207-1.44 5.68 5.68 0 0 1 0-7.898 6.75 6.75 0 0 1 8.438 0 5.653 5.653 0 0 1 0 7.875 6 6 0 0 1-4.23 1.462zM128 118.5a2.788 2.788 0 0 1-.578 1.46c-.374.29-.777.54-1.172.54h-6.75a2.645 2.645 0 0 1-1.37-.54c-.295-.385-.38-.867-.38-1.46V86.75c.027-.462.208-.902.513-1.25.374-.282.884-.578 1.282-.578h6.632c.504.062.98.262 1.378.578.307.342.466.791.445 1.25v31.75zm10.27 1.93c-.793 0-1.62-.375-1.77-1.18-.016-.25-.016-.5 0-.75v-32c-.03-.376.115-.745.393-1 .372-.282.712-.5 1.107-.5h5.25a1.84 1.84 0 0 1 1.855 1.625l.75 2.088c2.048-1.41 4.138-2.823 6.468-3.683a18.27 18.27 0 0 1 5.932-1 9.11 9.11 0 0 1 8.688 4.438 28.668 28.668 0 0 1 6.724-3.313 20.25 20.25 0 0 1 6.433-1.035c2.765-.17 5.477.807 7.5 2.7 1.865 2.043 3.088 4.965 2.92 7.923v23.5a4 4 0 0 1-.648 1.672 2.472 2.472 0 0 1-1.372.585H182c-.79 0-1.6-.445-1.75-1.25-.016-.25-.016-.5 0-.75V96.25c0-3.135-1.428-4.5-4.232-4.5-2.606.013-5.175.61-7.518 1.75v25a1.71 1.71 0 0 1-1.75 2h-6.5a1.915 1.915 0 0 1-1.75-1.5 2.568 2.568 0 0 1 0-.5v-22c0-3.135-1.5-4.75-4.308-4.75-2.644.015-5.285.485-7.692 1.695v25.12c0 .435 0 .963-.292 1.335-.39.345-.893.534-1.413.53h-6.525zm75.98 1.07c-4.847.317-9.553-1.522-13.102-4.84a18.425 18.425 0 0 1-4.5-13.5 20 20 0 0 1 4.602-14.06 16.865 16.865 0 0 1 13.058-5.1c3.617-.215 7.19.888 10.057 3.105A10.345 10.345 0 0 1 228 95.422a8.86 8.86 0 0 1-3.928 7.828 20.483 20.483 0 0 1-11.5 2.655 27.14 27.14 0 0 1-6.75-.765 9.347 9.347 0 0 0 2.796 6.61 11.015 11.015 0 0 0 7.22 2 28.598 28.598 0 0 0 3.75-.25 46.895 46.895 0 0 0 5.085-1.08h.75c.78 0 1.327.25 1.327 1.32v3.75c0 .5-.222.775-.472 1.25-.32.374-.743.648-1.215.788-3.44 1.28-7.145 2.034-10.813 1.972zm-2.19-21.805a9.405 9.405 0 0 0 5.105-1.077 3.693 3.693 0 0 0 1.597-3.285c0-2.895-1.725-4.343-5.174-4.343-4.424 0-6.98 2.715-7.67 8.145a31.36 31.36 0 0 0 6.097.56h.045z" fill-rule="nonzero"></path></g></svg>
+              <p>Support your favorite streamer, plus get monthly games and in-game loot, and loads more with Twitch Prime.</p>
+              <a href="">Start Your Free Trial</a>
+            </div>
+
+              <ul>
+                <li class="games">
+                  <h2>Yahtzee With Buddies: Exclusive Prime Vanity Dice</h2>
+                  <div class="game-picture"></div>
+                  <p>In-Game Loot: July 9 - July 23</p>
+                  <span>Scopely</span>
+                  <a href="">Start Your Free Trial</a>
+                </li>
+
+                <li class="games">
+                  <h2>World of Tanks: Care Package July & Captured King Tiger Tank</h2>
+                  <div class="game-picture"></div>
+                  <p>In-Game Loot: July 9 – Aug 11</p>
+                  <span>Wargaming</span>
+                  <a href="">Start Your Free Trial</a>
+                </li>
+
+                <li class="games">
+                  <h2>King of Avalon: Lord Portrait, Speed Up, Resources, and EXP</h2>
+                  <div class="game-picture"></div>
+                  <p>In-Game Loot: July 8 - July 22</p>
+                  <span>FunPlus</span>
+                  <a href="">Start Your Free Trial</a>
+                </li>
+                <li class="games">
+                  <h2>The Seven Deadly Sins: Grand Cross: Claim valuable in-game loot</h2>
+                  <div class="game-picture"></div>
+                  <p>In-Game Loot: July 7 – July 21</p>
+                  <span>Netmarble</span>
+                  <a href="">Start Your Free Trial</a>
+                </li>
+                <li class="games">
+                  <h2>Black Desert Mobile: Outfit Set Chest</h2>
+                  <div class="game-picture"></div>
+                  <p>In-Game Loot: July 7 – July 21</p>
+                  <span>Pearl Abyss</span>
+                  <a href="">Start Your Free Trial</a>
+                </li>
+                <li class="games">
+                  <h2>Words With Friends 2: Be Jelly Tile Style</h2>
+                  <div class="game-picture"></div>
+                  <p>In-Game Loot: July 6 - July 20</p>
+                  <span>Zynga</span>
+                  <a href="">Start Your Free Trial</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          </div>
+
+          <div class="relative">
+            <div class="dropdown-toggler dropdown-toggler-highlight">
+              <ion-icon name="notifications-outline"></ion-icon>
+            </div>
+            <div class="dropdown dropdown-notifications">
+              <div class="header-wrapper">
+                <div class="header">
+                  <div class="icon-wrapper">
+                    <ion-icon name="mail-open-outline"></ion-icon>
+                  </div>
+                  <div class="invisible"></div>
+                  <h3>Notifications</h3>
+                  <div class="icon-wrapper">
+                    <ion-icon name="settings-outline"></ion-icon>
+                  </div>
+                  <div class="icon-wrapper">
+                  <ion-icon class="close-icon" name="close-outline"></ion-icon>
+                  </div>
+                </div>
+              </div>
+            <div class="body">
+              <ul class="notification-list">
+                <li>
+                  <div class="avatar">
+                    <ion-icon class="person-icon" name="person-outline"></ion-icon>
+                  </div>
+                  <div>
+                    <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, Neque est qui dolorem ipsum.</p>
+                    <span>3 months ago</span>
+                  </div>
+                  <div class="wrapper">
+                    <div class="delete-icon-wrapper">
+                    <ion-icon class="delete-icon" name="close-outline"></ion-icon>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="avatar"><ion-icon class="person-icon" name="person-outline"></ion-icon></div>
+                  <div><p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, Neque est qui dolorem ipsum.</p>
+                  <span>3 months ago</span>
+                  </div>
+                  <div class="wrapper">
+                    <div class="delete-icon-wrapper">
+                    <ion-icon class="delete-icon" name="close-outline"></ion-icon>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="avatar"><ion-icon class="person-icon" name="person-outline"></ion-icon></div>
+                  <div><p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, Neque est qui dolorem ipsum.</p>
+                  <span>3 months ago</span>
+                  </div>
+                  <div class="wrapper">
+                    <div class="delete-icon-wrapper">
+                    <ion-icon class="delete-icon" name="close-outline"></ion-icon>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="avatar"><ion-icon class="person-icon" name="person-outline"></ion-icon></div>
+                  <div><p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, Neque est qui dolorem ipsum.</p>
+                  <span>3 months ago</span>
+                  </div>
+                  <div class="wrapper">
+                    <div class="delete-icon-wrapper">
+                    <ion-icon class="delete-icon" name="close-outline"></ion-icon>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="avatar"><ion-icon class="person-icon" name="person-outline"></ion-icon></div>
+                  <div><p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, Neque est qui dolorem ipsum.</p>
+                  <span>3 months ago</span>
+                  </div>
+                  <div class="wrapper">
+                    <div class="delete-icon-wrapper">
+                    <ion-icon class="delete-icon" name="close-outline"></ion-icon>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="avatar"><ion-icon class="person-icon" name="person-outline"></ion-icon></div>
+                  <div><p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, Neque est qui dolorem ipsum.</p>
+                  <span>3 months ago</span>
+                  </div>
+                  <div class="wrapper">
+                    <div class="delete-icon-wrapper">
+                    <ion-icon class="delete-icon" name="close-outline"></ion-icon>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="avatar"><ion-icon class="person-icon" name="person-outline"></ion-icon></div>
+                  <div><p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, Neque est qui dolorem ipsum.</p>
+                  <span>3 months ago</span>
+                  </div>
+                  <div class="wrapper">
+                    <div class="delete-icon-wrapper">
+                    <ion-icon class="delete-icon" name="close-outline"></ion-icon>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="avatar"><ion-icon class="person-icon" name="person-outline"></ion-icon></div>
+                  <div><p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, Neque est qui dolorem ipsum.</p>
+                  <span>3 months ago</span>
+                  </div>
+                  <div class="wrapper">
+                    <div class="delete-icon-wrapper">
+                    <ion-icon class="delete-icon" name="close-outline"></ion-icon>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="avatar"><ion-icon class="person-icon" name="person-outline"></ion-icon></div>
+                  <div><p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, Neque est qui dolorem ipsum.</p>
+                  <span>3 months ago</span>
+                  </div>
+                  <div class="wrapper">
+                    <div class="delete-icon-wrapper">
+                    <ion-icon class="delete-icon" name="close-outline"></ion-icon>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="avatar"><ion-icon class="person-icon" name="person-outline"></ion-icon></div>
+                  <div><p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, Neque est qui dolorem ipsum.</p>
+                  <span>3 months ago</span>
+                  </div>
+                  <div class="wrapper">
+                    <div class="delete-icon-wrapper">
+                    <ion-icon class="delete-icon" name="close-outline"></ion-icon>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="avatar"><ion-icon class="person-icon" name="person-outline"></ion-icon></div>
+                  <div><p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, Neque est qui dolorem ipsum.</p>
+                  <span>3 months ago</span>
+                  </div>
+                  <div class="wrapper">
+                    <div class="delete-icon-wrapper">
+                    <ion-icon class="delete-icon" name="close-outline"></ion-icon>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            </div>
+          </div>
+
+      <div class="relative">
+        <div class="dropdown-toggler dropdown-toggler-highlight">
+          <ion-icon name="chatbox-outline"></ion-icon>
+        </div>
+        <div class="dropdown dropdown-whispers">
+          <div class="header-top">
+            <h3>Whispers</h3>
+            <div class="wrapper">
+              <div class="icon-wrapper"><ion-icon name="settings-outline"></ion-icon></div>
+               <div class="icon-wrapper"><ion-icon class="close-icon" name="close-outline"></ion-icon>
+                 </div>
+            </div>
+          </div>
+          <div class="header-bottom">
+            <div class="wrapper">
               <ion-icon name="search-outline"></ion-icon>
+              <input type="text" placeholder="Search for People">
             </div>
           </div>
-        </div>
-        <!-- --------------------------------- -->
-        <div class="nav-right">
-          <div class="nav-right-items-wrapper">
-            <div class="dropdown-toggler">
-              <svg class="crown-svg" width="100%" height="100%" version="1.1" viewBox="0 0 20 20" x="0px" y="0px" class="ScIconSVG-sc-1bgeryd-1 cMQeyU"><g><path fill-rule="evenodd" clip-rule="evenodd" d="M13.798 10.456L10 6.657l-3.798 3.799L4 8.805V13h12V8.805l-2.202 1.65zM18 5v8a2 2 0 0 1-2 2H4a2.002 2.002 0 0 1-2-2V5l4 3 4-4 4 4 4-3z"></path></g></svg>
-            </div>
-            <div class="dropdown-toggler">
-            <ion-icon name="notifications-outline"></ion-icon>
-            </div>
-            <div class="dropdown-toggler">
-              <ion-icon name="chatbox-outline"></ion-icon>
-            </div>
-            <div class="get-bits-wrapper">
-              <i class="far fa-gem gem-icon"></i>
-              <span>Get Bits</span>
-            </div>
-            <div class="avatar"><ion-icon class="person-icon" name="person-outline"></ion-icon></div>
+          <div class="body">
+            <ul>
+              <li>
+                <div class="avatar">
+                  <ion-icon class="person-icon" name="person-outline"></ion-icon>
+                </div>
+                <div class="message-section">
+                  <p>StarFire</p>
+                  <span>hii</span>
+                </div>
+                <div class="delete-icon-wrapper">
+                  <ion-icon class="delete-icon" name="trash-outline"></ion-icon>
+                </div>
+              </li>
+              <li>
+                <div class="avatar">
+                  <ion-icon class="person-icon" name="person-outline"></ion-icon>
+                </div>
+                <div class="message-section">
+                  <p>StarFire</p>
+                  <span>hii</span>
+                </div>
+                <div class="delete-icon-wrapper">
+                  <ion-icon class="delete-icon" name="trash-outline"></ion-icon>
+                </div>
+              </li>
+              <li>
+                <div class="avatar">
+                  <ion-icon class="person-icon" name="person-outline"></ion-icon>
+                </div>
+                <div class="message-section">
+                  <p>StarFire</p>
+                  <span>hii</span>
+                </div>
+                <div class="delete-icon-wrapper">
+                  <ion-icon class="delete-icon" name="trash-outline"></ion-icon>
+                </div>
+              </li>
+              <li>
+                <div class="avatar">
+                  <ion-icon class="person-icon" name="person-outline"></ion-icon>
+                </div>
+                <div class="message-section">
+                  <p>StarFire</p>
+                  <span>hii</span>
+                </div>
+                <div class="delete-icon-wrapper">
+                  <ion-icon class="delete-icon" name="trash-outline"></ion-icon>
+                </div>
+              </li>
+              <li>
+                <div class="avatar">
+                  <ion-icon class="person-icon" name="person-outline"></ion-icon>
+                </div>
+                <div class="message-section">
+                  <p>StarFire</p>
+                  <span>hii</span>
+                </div>
+                <div class="delete-icon-wrapper">
+                  <ion-icon class="delete-icon" name="trash-outline"></ion-icon>
+                </div>
+              </li>
+              <li>
+                <div class="avatar">
+                  <ion-icon class="person-icon" name="person-outline"></ion-icon>
+                </div>
+                <div class="message-section">
+                  <p>StarFire</p>
+                  <span>hii</span>
+                </div>
+                <div class="delete-icon-wrapper">
+                  <ion-icon class="delete-icon" name="trash-outline"></ion-icon>
+                </div>
+              </li>
+              <li>
+                <div class="avatar">
+                  <ion-icon class="person-icon" name="person-outline"></ion-icon>
+                </div>
+                <div class="message-section">
+                  <p>StarFire</p>
+                  <span>hii</span>
+                </div>
+                <div class="delete-icon-wrapper">
+                  <ion-icon class="delete-icon" name="trash-outline"></ion-icon>
+                </div>
+              </li>
+              <li>
+                <div class="avatar">
+                  <ion-icon class="person-icon" name="person-outline"></ion-icon>
+                </div>
+                <div class="message-section">
+                  <p>StarFire</p>
+                  <span>hii</span>
+                </div>
+                <div class="delete-icon-wrapper">
+                  <ion-icon class="delete-icon" name="trash-outline"></ion-icon>
+                </div>
+              </li>
+              <li>
+                <div class="avatar">
+                  <ion-icon class="person-icon" name="person-outline"></ion-icon>
+                </div>
+                <div class="message-section">
+                  <p>StarFire</p>
+                  <span>hii</span>
+                </div>
+                <div class="delete-icon-wrapper">
+                  <ion-icon class="delete-icon" name="trash-outline"></ion-icon>
+                </div>
+              </li>
+            </ul>
           </div>
+
         </div>
-      </nav>
-    </header>
-  </body>
-  <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
-  <script src="https://kit.fontawesome.com/e4b4898cd5.js" crossorigin="anonymous" charset="utf-8"></script>
-  <script src="app.js" charset="utf-8"></script>
+      </div>
+
+
+
+
+      <div class="get-bits-wrapper">
+        <i class="far fa-gem gem-icon"></i>
+        <span>Get Bits</span>
+      </div>
+
+      <div class="relative">
+        <div class="avatar dropdown-toggler">
+          <ion-icon class="person-icon" name="person-outline"></ion-icon>
+          <div class="online-status"></div>
+        </div>
+        <div class="dropdown dropdown-avatar">
+          <div class="header">
+            <div class="user-info">
+              <div class="avatar">
+                <ion-icon class="person-icon" name="person-outline"></ion-icon>
+              </div>
+              <div>
+                <p>Username</p>
+                <span class="online-status"></span><span>Offline</span>
+              </div>
+            </div>
+            <div class="toggle-online">
+              <div>Online</div>
+              <div class="toggle-button">
+                <ion-icon class="checkmark-icon" name="checkmark-outline"></ion-icon>
+                <div class="white-circle"></div>
+              </div>
+            </div>
+            <div class="toggle-online">
+              <div>Share My Activity</div>
+              <div class="toggle-button">
+                <ion-icon class="checkmark-icon" name="checkmark-outline"></ion-icon>
+                <div class="white-circle"></div>
+              </div>
+            </div>
+          </div>
+
+          <ul>
+            <li><a href=""><ion-icon name="body-outline"></ion-icon><p>Channel</p></a></li>
+            <li><a href=""><ion-icon name="options-outline"></ion-icon><p>Video Producer</p></a></li>
+            <li><a href=""><ion-icon name="podium-outline"></ion-icon><p>Creator Dashboard</p></a></li>
+          </ul>
+
+          <ul>
+            <li><a href=""><ion-icon name="people-outline"></ion-icon><p>Friends</p></a></li>
+            <li><a href=""><ion-icon name="star-outline"></ion-icon><p>Subscriptions</p></a></li>
+            <li><a href=""><ion-icon name="file-tray-outline"></ion-icon><p>Inventory</p></a></li>
+            <li><a href=""><ion-icon name="wallet-outline"></ion-icon><p>Wallet</p></a></li>
+          </ul>
+
+          <ul>
+            <li><a href=""><ion-icon name="settings-outline"></ion-icon><p>Settings</p></a></li>
+            <li><a href=""><ion-icon name="globe-outline"></ion-icon><p>Language</p></a></li>
+            <li>
+              <div class="dark-theme">
+                <div><ion-icon name="moon-outline"></ion-icon><p>Dark Theme</p></div>
+                <div class="toggle-online">
+                  <div class="toggle-button">
+                    <ion-icon class="checkmark-icon" name="checkmark-outline"></ion-icon>
+                    <div class="white-circle"></div>
+                  </div>
+                </div>
+            </div>
+          </li>
+          </ul>
+          <ul><li><a href=""><ion-icon name="log-out-outline"></ion-icon><p>Log Out</p></a></li></ul>
+        </div>
+      </div>
+      </div>
+        </div>
+    </nav>
+  </header>
+
+  <aside>
+
+  </aside>
+  <main>
+
+  </main>
+</body>
+<script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+<script src="https://kit.fontawesome.com/e4b4898cd5.js" crossorigin="anonymous" charset="utf-8"></script>
+<script src="app.js" charset="utf-8"></script>
+
 </html>
