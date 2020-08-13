@@ -2,6 +2,8 @@
 <html lang="en" dir="ltr">
 
 <head>
+  <script type="module" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule="" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.js"></script>
   <link rel="stylesheet" href="styles.css">
   <meta charset="utf-8">
   <title></title>
@@ -9,7 +11,7 @@
 
 <body>
   <header>
-    <nav class="twitch-nav">
+    <nav class="twitch-nav theme nav-light">
       <div class="nav-left">
         <a class="twitch-logo-wrapper" href="">
           <ion-icon class="nav-twitch-logo" name="logo-twitch"></ion-icon>
@@ -325,8 +327,20 @@
             </div>
           </div>
           <div class="body">
-            <ul>
-              <li>
+            <ul class="whispers-list">
+              <li class="whisper1">
+                <div class="avatar">
+                  <ion-icon class="person-icon" name="person-outline"></ion-icon>
+                </div>
+                <div class="message-section">
+                  <p>StarFire</p>
+                  <span></span>
+                </div>
+                <div class="delete-icon-wrapper">
+                  <ion-icon class="delete-icon" name="trash-outline"></ion-icon>
+                </div>
+              </li>
+              <li class="whisper2">
                 <div class="avatar">
                   <ion-icon class="person-icon" name="person-outline"></ion-icon>
                 </div>
@@ -338,7 +352,7 @@
                   <ion-icon class="delete-icon" name="trash-outline"></ion-icon>
                 </div>
               </li>
-              <li>
+              <li class="whisper3">
                 <div class="avatar">
                   <ion-icon class="person-icon" name="person-outline"></ion-icon>
                 </div>
@@ -350,7 +364,7 @@
                   <ion-icon class="delete-icon" name="trash-outline"></ion-icon>
                 </div>
               </li>
-              <li>
+              <li class="whisper4">
                 <div class="avatar">
                   <ion-icon class="person-icon" name="person-outline"></ion-icon>
                 </div>
@@ -362,7 +376,7 @@
                   <ion-icon class="delete-icon" name="trash-outline"></ion-icon>
                 </div>
               </li>
-              <li>
+              <li class="whisper5">
                 <div class="avatar">
                   <ion-icon class="person-icon" name="person-outline"></ion-icon>
                 </div>
@@ -374,7 +388,7 @@
                   <ion-icon class="delete-icon" name="trash-outline"></ion-icon>
                 </div>
               </li>
-              <li>
+              <li class="whisper6">
                 <div class="avatar">
                   <ion-icon class="person-icon" name="person-outline"></ion-icon>
                 </div>
@@ -386,43 +400,7 @@
                   <ion-icon class="delete-icon" name="trash-outline"></ion-icon>
                 </div>
               </li>
-              <li>
-                <div class="avatar">
-                  <ion-icon class="person-icon" name="person-outline"></ion-icon>
-                </div>
-                <div class="message-section">
-                  <p>StarFire</p>
-                  <span>hii</span>
-                </div>
-                <div class="delete-icon-wrapper">
-                  <ion-icon class="delete-icon" name="trash-outline"></ion-icon>
-                </div>
-              </li>
-              <li>
-                <div class="avatar">
-                  <ion-icon class="person-icon" name="person-outline"></ion-icon>
-                </div>
-                <div class="message-section">
-                  <p>StarFire</p>
-                  <span>hii</span>
-                </div>
-                <div class="delete-icon-wrapper">
-                  <ion-icon class="delete-icon" name="trash-outline"></ion-icon>
-                </div>
-              </li>
-              <li>
-                <div class="avatar">
-                  <ion-icon class="person-icon" name="person-outline"></ion-icon>
-                </div>
-                <div class="message-section">
-                  <p>StarFire</p>
-                  <span>hii</span>
-                </div>
-                <div class="delete-icon-wrapper">
-                  <ion-icon class="delete-icon" name="trash-outline"></ion-icon>
-                </div>
-              </li>
-              <li>
+              <li class="whisper7">
                 <div class="avatar">
                   <ion-icon class="person-icon" name="person-outline"></ion-icon>
                 </div>
@@ -436,12 +414,8 @@
               </li>
             </ul>
           </div>
-
         </div>
       </div>
-
-
-
 
       <div class="get-bits-wrapper">
         <i class="far fa-gem gem-icon"></i>
@@ -461,17 +435,17 @@
               </div>
               <div>
                 <p>Username</p>
-                <span class="online-status"></span><span>Offline</span>
+                <span class="online-status"></span><span class="online-offline">Offline</span>
               </div>
             </div>
             <div class="toggle-online">
               <div>Online</div>
               <div class="toggle-button">
                 <ion-icon class="checkmark-icon" name="checkmark-outline"></ion-icon>
-                <div class="white-circle"></div>
+                <div class="white-circle white-circle-online"></div>
               </div>
             </div>
-            <div class="toggle-online">
+            <div class="share-activity toggle-online hidden">
               <div>Share My Activity</div>
               <div class="toggle-button">
                 <ion-icon class="checkmark-icon" name="checkmark-outline"></ion-icon>
@@ -500,9 +474,9 @@
               <div class="dark-theme">
                 <div><ion-icon name="moon-outline"></ion-icon><p>Dark Theme</p></div>
                 <div class="toggle-online">
-                  <div class="toggle-button">
+                  <div class="toggle-button online">
                     <ion-icon class="checkmark-icon" name="checkmark-outline"></ion-icon>
-                    <div class="white-circle"></div>
+                    <div class="white-circle dark-theme-btn move"></div>
                   </div>
                 </div>
             </div>
@@ -515,15 +489,26 @@
         </div>
     </nav>
   </header>
+  <div class="body-section">
+    <aside>
+      <ul>
+        <h3>FOLLOWED CHANNELS</h3>
+      </ul>
+      <ul>
+        <h3>RECOMMENDED CHANNELS</h3>
+      </ul>
+      <ul>
+        <h3>ONLINE FRIENDS</h3>
+      </ul>
+    </aside>
+    <main>
 
-  <aside>
+    </main>
+  </div>
 
-  </aside>
-  <main>
-
-  </main>
 </body>
-<script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+
+
 <script src="https://kit.fontawesome.com/e4b4898cd5.js" crossorigin="anonymous" charset="utf-8"></script>
 <script src="app.js" charset="utf-8"></script>
 
