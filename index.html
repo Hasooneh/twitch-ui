@@ -489,18 +489,24 @@
         </div>
     </nav>
   </header>
-  <div class="body-section">
+  <div class="content-section">
     <aside>
-      <ul>
-        <h3>FOLLOWED CHANNELS</h3>
-      </ul>
-      <ul>
-        <h3>RECOMMENDED CHANNELS</h3>
-      </ul>
-      <ul>
-        <h3>ONLINE FRIENDS</h3>
-      </ul>
-    </aside>
+        <div class="followed-container">
+          <div class="channel-type channel-type-followed">
+            <h4 class="collapsable">Followed Channels</h4>
+            <div class="follower-ion-container">
+              <ion-icon name="chevron-back-outline" class="collapse-btn"></ion-icon>
+            </div>
+          </div>
+          <ul class="followed-channels-list">
+          </ul>
+          <div class="show-more-less-btns">
+            <p href="" class="show-more collapsable invis">Show More</p>
+            <p href="" class="show-less collapsable invis">Show Less</p>
+          </div>
+
+        </div>
+        </aside>
     <main>
 
     </main>
@@ -508,8 +514,7 @@
 
 </body>
 
-
 <script src="https://kit.fontawesome.com/e4b4898cd5.js" crossorigin="anonymous" charset="utf-8"></script>
-<script src="app.js" charset="utf-8"></script>
+<script src="bundle.js"  charset="utf-8"></script>
 
 </html>

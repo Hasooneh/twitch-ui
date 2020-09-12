@@ -32,7 +32,7 @@ a {
   width: 3rem;
   background-color: white;
   border-radius: 50%;
-  margin-right: 1rem;
+  /* margin-right: 1rem; */
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -45,7 +45,7 @@ a {
 /* ---------------------- light theme ---------------------- */
 .nav-light.on {
   background-color: white;
-  box-shadow: 0 1px rgba(0,0,0,0.2);
+  border-bottom: 1.5px solid rgba(0,0,0,0.3);
 }
 .nav-light.on a {
   color: black;
@@ -55,7 +55,8 @@ a {
   display: flex;
   align-items: stretch;
   background-color: var(--navbar);
-  min-height: 5rem;
+  min-height: 4.5rem;
+  border-bottom: 1.5px solid black;
 }
 .twitch-nav ion-icon {
   cursor:pointer;
@@ -220,6 +221,7 @@ a {
 }
 .nav-right .avatar {
   position: relative;
+  margin-right: 10px;
 }
 .nav-right .person-icon {
   color: black;
@@ -572,6 +574,7 @@ a {
 .dropdown-avatar .avatar {
   width: 4rem;
   height: 4rem;
+  margin-right: 10px;
 }
 .dropdown-avatar .avatar .person-icon {
   font-size: 2rem;
@@ -665,16 +668,146 @@ a {
 .dropdown-avatar li a:hover {
   background-color: var(--search);
 }
-/* -----------------------body-section----------------------- */
-.body-section {
+/* -----------------------content-section----------------------- */
+.content-section {
   display: flex;
+  width: 100vw;
 }
 /* -----------------------sidebar----------------------- */
 aside {
-  height: calc(100vh - 5rem);
-  overflow-y: scroll;
+  background-color: #1F1F23;
+  padding-top: 1rem;
+  height: 92vh;
+  overflow-y: auto;
 }
+aside .followed-channels-list {
+  display: flex;
+  flex-direction: column;
+}
+aside li {
+  display: flex;
+  padding:0.7rem;
+  position: relative;
+  cursor: pointer;
+  justify-content: center;
+}
+aside li.online {
+  order: 0;
+  position: relative;
+}
+aside li.offline {
+  order: 100;
+}
+aside li.hide {
+  display: none;
+}
+aside li:hover {
+  background-color: rgba(155,155,155,0.1);
+}
+aside li .wrapper {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+}
+aside li .streamer-info {
+  flex-grow: 1;
+  margin: 0 10px;
+}
+aside li .container-viewership {
+  min-width: 40px;
+}
+aside li .status {
+  display: flex;
+  align-items: center;
+}
+aside li .invisible-game {
+  display: block;
+  height: 12px;
+  width: 10px;
+}
+aside li .avatar {
+  height: 2.7rem;
+  width: 2.7rem;
+}
+aside li .person-icon {
+  font-size: 1.2rem;
+}
+aside li .viewer-count {
+  margin-left: 2px;
+  font-size: 13px;
+}
+aside li .red-dot {
+  height: 0.7rem;
+  width: 0.7rem;
+  border-radius: 50%;
+  background-color: red;
+}
+aside h4, aside p {
+  color: rgba(255,255,255,0.7);
+  line-height: 0.8;
+  margin-bottom: 2px;
+  letter-spacing: -1px;
+}
+aside h4 {
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+aside .streamer-name {
+  font-size: 16px;
+}
+aside span {
+  font-size: 12px;
+  color:rgba(255,255,255,0.8);
+}
+.channel-type {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 0.7rem;
+}
+.channel-type.collapsed {
+  justify-content: center; 
+}
+.channel-type ion-icon {
+  font-size: 2rem;
+  color:rgba(255,255,255,0.7);
+  padding: 0.1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.channel-type-followed ion-icon:hover {
+  background-color: rgba(255,255,255,.3);
+}
+.show-more-less-btns {
+  display: flex;
+  justify-content: space-between;
+}
+.show-more,.show-less {
+  color:var(--purple);
+  padding-left: 0.7rem;
+  margin-top: 9px;
+  font-size: 12px;
+  cursor: pointer;
+}
+.show-less {
+  padding-right: 0.7rem;
+}
+.show-less.hide,.show-more.hide {
+  display: none;
+}
+.show-less.invis,.show-more.invis {
+  display: none;
+}
+.show-more:hover,.show-less:hover {
+  text-decoration: underline;
+}
+  .followed-container .collapsable.hide {
+  display: none;
+}
+
+/* -----------------------main----------------------- */
 main {
   flex: 1;
+  background-color: red;
 }
-/* -----------------------main----------------------- */

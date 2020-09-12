@@ -11,11 +11,12 @@ const shareActivityBtn = shareActivitySection.querySelector(".white-circle");
 const navLeftLinks = document.querySelectorAll(".nav-left-link-wrapper");
 const darkThemeBtn = document.querySelector(".dark-theme-btn");
 const links = document.querySelectorAll("a");
-
+let closeDropdownTimeout;
 
 (function calcFlex() {
   navLeftLinks.forEach(cur => cur.style.flex = 1 + cur.offsetWidth/100);
 })();
+
 function closeOtherDropdowns(dropdown) {
   dropdownTogglers.forEach(cur => {
     cur === dropdown ? "": cur.nextElementSibling.classList.remove("show");
@@ -24,19 +25,18 @@ function closeOtherDropdowns(dropdown) {
 function toggleDropdown() {
   closeOtherDropdowns(this);
   const dropdown = this.nextElementSibling;
-  dropdown.classList.toggle("show");
-
-  x = setTimeout(() => {
-    let dropdownRect = dropdown.getBoundingClientRect();
-    document.addEventListener("click", function closeDropdownIfClickedOutside(e) {
-
-          if((e.pageX <= dropdownRect.x || dropdownRect.right <= e.pageX)||(e.pageY <= dropdownRect.y || dropdownRect.bottom <= e.pageY)) {
-            dropdown.classList.remove("show");
-            document.removeEventListener("click",closeDropdownIfClickedOutside);
-            clearTimeout(x);
-          }
-    })
+  dropdown.classList.add("show");
+  let dropdownRect = dropdown.getBoundingClientRect();
+    closeDropdownTimeout = setTimeout(() => {
+    document.addEventListener("click",closeDropdownIfClickedOutside)
   },0)
+  function closeDropdownIfClickedOutside(e) {
+
+      if((e.pageX <= dropdownRect.x || dropdownRect.right <= e.pageX)||(e.pageY <= dropdownRect.y || dropdownRect.bottom <= e.pageY)) {
+      clearTimeout(closeDropdownTimeout);
+      document.removeEventListener("click",closeDropdownIfClickedOutside);
+      dropdown.classList.remove("show");}
+  }
 }
 function closeDropdown(e) {
   if(e.target.classList.contains("close-icon")) {
